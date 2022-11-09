@@ -1,0 +1,17 @@
+{
+  "richdude": {
+	  "name": "Bill Gates Typa Dude's",
+	  "moneys": 1000000000,
+    "img": "rich.png"
+  },
+  "items": [
+	  {"name": "Guezzli", "cost": 7, "img": "guezli1.png", "deduction": 0},
+	  {"name": "Donutses", "cost": 2, "img": "guezli2.png", "deduction": 0},
+	  {"name": "Guezzli", "cost": 11, "img": "guezli1.png", "deduction": 0},
+	  {"name": "Donutses", "cost": 3, "img": "guezli2.png", "deduction": 0},
+	  {"name": "Guezzli", "cost": 3, "img": "guezli1.png", "deduction": 0},
+	  {"name": "Donutses", "cost": 6, "img": "guezli2.png", "deduction": 0},
+	  {"name": "Guezzli", "cost": 9, "img": "guezli1.png", "deduction": 0},
+	  {"name": "Donutses", "cost": 4, "img": "guezli2.png", "deduction": 0}
+  ]
+}
