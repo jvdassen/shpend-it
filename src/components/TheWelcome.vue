@@ -22,12 +22,12 @@ export default {
   },
   methods: {
     sell: function (item) { 
-      if(item.deduction > 0) {
-        item.deduction--
+      if(item.deduction >= item.cost) {
+        item.deduction -= item.cost
       }
     },
     buy: function (item) {
-      item.deduction++
+      item.deduction += item.cost
     }
   }
 }
@@ -37,7 +37,7 @@ export default {
 <div>
   <div class="rich">
     <div class="iconwrap">
-      <div class="icon" :style="{backgroundImage: 'url(/public/' + richdude.img +')'}"></div>
+      <div class="icon" :style="{backgroundImage: 'url(/' + richdude.img +')'}"></div>
     </div>
     <h2 class="name">Spend {{richdude.name}} Money</h2>
   </div>
@@ -45,7 +45,7 @@ export default {
   <div class="stuffs">
     <div class="stuff" v-for="(item, index) in items">
       <div class="iconproductwrap">
-        <div class="iconproduct" :style="{backgroundImage: 'url(/public/' + item.img +')'}"></div>
+        <div class="iconproduct" :style="{backgroundImage: 'url(/' + item.img +')'}"></div>
       </div>
       <h3 class="title">{{item.name}}</h3>
       <h4 class="cost">CHF {{item.cost}}</h4>

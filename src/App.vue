@@ -37,13 +37,6 @@ html {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.stuff {
-  flex: 0 0 28%;
-/*
-  border:  solid 1px #3d3d3d;
-*/
-  margin-bottom: 4em;
-}
 h4, h3 {
   text-align: center;
 }
@@ -141,5 +134,26 @@ button:hover {
   border: 2px solid #111;
   border-radius: 8px;
   text-align: center;
+}
+.controls {
+  max-width: 300px;
+  margin: auto;
+}
+@media only screen and (max-width: 720px) {
+  .stuff {
+    flex: 0 0 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .stuff {
+    flex: 0 0 50%;
+  }
+}
+.stuff {
+  flex: 0 0 28%;
+/*
+  border:  solid 1px #3d3d3d;
+*/
+  margin-bottom: 4em;
 }
 </style>
